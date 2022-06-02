@@ -1,0 +1,37 @@
+﻿.ArticleFrame {
+    height: 170px;
+    width: 100%;
+    opacity: 1;
+    margin-top: 1.5%;
+}
+.ArticleFrame a{
+    width: 100%;
+    height: inherit;
+    text-decoration:none;
+    color: inherit; 
+    display:flex;
+
+}
+.ArticleFrame :hover{
+    opacity: 0.6;
+}
+.no-padding{
+    padding: 0 0 0 0;
+}
+.b-AddArticle{
+    margin: 2% 0 2% 0;
+    background: #644381;
+    display:block;
+    height: 30px;
+    width:70px;
+    text-decoration:none;
+    color: #ffffff;
+    
+}
+.b-AddArticle:hover{
+    -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  text-decoration:none;
+  color: #ffffff;
+}

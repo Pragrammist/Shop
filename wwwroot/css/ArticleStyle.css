@@ -1,0 +1,109 @@
+﻿.ArticleContent {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+    .ArticleContent > .H1 {
+        display: block;
+        width: 100%;
+        min-height: 108px;
+        text-align: center;
+        font-family: Impact;
+        font-weight: 400;
+        font-size: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ArticleContent > .H2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 17px;
+        font-family: Consolas;
+        color: darkgray;
+        width: 78%;
+        min-height: 30px;
+        
+    }
+
+    .ArticleContent > img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        max-height: 50%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px #e6e6e6;
+    }
+    .ArticleContent > .IMG {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        max-height: 50%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px #e6e6e6;
+    }
+    .ArticleContent > .P {
+        display: block;
+        font-family: Verdana;
+        font-size: 20px;
+        min-height: 23px;
+        
+        margin: 0 0 0 0;
+    }
+
+
+    .ArticleContent > .H3 {
+        min-height: 43px;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-family: 'Times New Roman';
+    }
+
+
+    .ArticleContent > .Link {
+        text-decoration: dotted;
+        color: #6d5a9a;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+        .ArticleContent > .Link:hover {
+            color: #ffffff;
+            text-decoration: line-through;
+            background-color: #6d5a9a;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+
+
+
+
+
+
+
+.ArticleLSBar {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.ArticleRSBar {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}

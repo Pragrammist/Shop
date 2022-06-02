@@ -1,0 +1,89 @@
+﻿<head>
+    <title>@ViewData["Title"] - VMK_9PoPyM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/FirstPage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.2/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+    </style>
+</head>
+
+@model List<Blog>
+
+
+
+<article class="ArticleContent d-none">
+    <h1>Название статьи</h1>
+    <h2>Комментарий к названию</h2>
+    <img src="https://miro.medium.com/max/700/0*hs_v9oI1mybrgRJ8" />
+    <article>
+        <h3>#1Название под заголовка </h3>
+        <p>Для вывода изображений в HTML используется элемент img. Этот элемент представляет нам два важных атрибута:</p>
+        <p>Не все ссылки обязательно помещать в элемент nav. Например, некоторые ссылки могут не представлять связанного блока навигации, например, ссылка на главную страницу, на лицензионное соглашение по поводу использования сервиса и подобные ссылки, которые часто помещаются внизу страницы. Как правило, их достаточно определить в элементе footer, а элемент nav для них использовать необязательно.</p>
+        <p>Текст сайта</p>
+        <p>Текст сайта</p>
+        <p>Для вывода изображений в HTML используется элемент img. Этот элемент представляет нам два важных атрибута:</p>
+        <p>Не все ссылки обязательно помещать в элемент nav. Например, некоторые ссылки могут не представлять связанного блока навигации, например, ссылка на главную страницу, на лицензионное соглашение по поводу использования сервиса и подобные ссылки, которые часто помещаются внизу страницы. Как правило, их достаточно определить в элементе footer, а элемент nav для них использовать необязательно.</p>
+        <p>Текст сайта</p>
+        <p>Текст сайта</p>
+        <p>Для вывода изображений в HTML используется элемент img. Этот элемент представляет нам два важных атрибута:</p>
+        <p>Не все ссылки обязательно помещать в элемент nav. Например, некоторые ссылки могут не представлять связанного блока навигации, например, ссылка на главную страницу, на лицензионное соглашение по поводу использования сервиса и подобные ссылки, которые часто помещаются внизу страницы. Как правило, их достаточно определить в элементе footer, а элемент nav для них использовать необязательно.</p>
+        <p>Текст сайта</p>
+        <p> <a href="https://www.microsoft.com/ru-ru/">ТЕКСТ</a></p>
+    </article>
+</article>
+
+
+<article class="d-flex flex-column" style="padding: 0 0 0 0; margin: 0 0 0 0">
+    <div class="d-flex flex-column">
+        @{
+            for (int i = 0; i < Model.Count; i++)
+            {
+                var title = Model[i].Title;
+                var titleComment = Model[i].TitleComment;
+                var img = Model[i].MainImg;
+                var id = Model[i].Id;
+
+                <div class="ArticleFrame">
+                    <a href="~/Article?id=@id" class="container-fluid no-padding">
+                        <div class="h-100 no-gutters col-md-6 col-xl-8 no-padding d-flex flex-column justify-content-center align-content-center">
+                            <div style="text-align: justify; ">
+                                <p style="font-size: 30px; font-weight:bold">@title</p>
+                                <p style="font-size: 15px; font-weight:lighter; color:#b1b1b1">@titleComment</p>
+                            </div>
+                        </div>
+                        <div class="h-100 no-gutters col-md-6 col-xl-4 no-padding ">
+                            <img src="@img" class="w-100 h-100" />
+                        </div>
+                    </a>
+                </div>
+            }
+        }
+    </div>
+    
+    <a href="~/CreateArticle" class="no-padding no-gutters b-AddArticle">
+        <span style="text-align:center">
+            Добавить
+        </span>
+    </a>
+    
+
+</article>
+
+@section RightSl
+{
+    <article class="ArticleRSBar">
+
+    </article>
+}
+@section LeftSl
+{
+    <article class="ArticleLSBar">
+    </article>
+}
+

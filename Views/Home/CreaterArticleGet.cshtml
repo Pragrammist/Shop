@@ -1,0 +1,38 @@
+﻿<head>
+    <title>@ViewData["Title"] - VMK_9PoPyM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/ArticleStyle.css" />
+    <link rel="stylesheet" href="/css/ArticleCreator.css" />
+</head>
+
+<script src="~/js/AdderArticle.js"></script>
+<script src="~/js/CreateAndSendBlog.js"></script>
+<form enctype="multipart/form-data" autocomplete="off" method="post" id="creatorForm" name="creatorForm" class="MainForm">
+    <div class="ArticleContent">
+        <textarea name="title" class="H1" placeholder ="Введите название статьи"></textarea>
+        <textarea name="titleComment" class="H2" placeholder ="Введите комментарий к заголовку"></textarea>
+        <textarea name="mainImg" rows="1" placeholder ="Вставьте ссылку на фото, здесь будет ваше превью"></textarea>
+    </div>
+</form>
+<input type="button" form="creatorForm" onclick="CreatBlog()"/>
+<div" class="dropdown">
+    <button class="btn btn-info " href="#" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        +
+    </button>
+    <span class="dropdown-menu" aria-labelledby="dropdownMenu">
+        <button class="dropdown-item" id="AddP" onclick="ClickEvenButton(this)">Добаить параграф</button>
+        <button class="dropdown-item" id="AddPh" onclick="ClickEvenButton(this)">Добавить фото</button>
+        <button class="dropdown-item" id="AddSubT" onclick="ClickEvenButton(this)">Добавить подзаголовок</button>
+    </span>
+</div">
+
+
+@section RightSl
+{
+
+}
+@section LeftSl
+{
+
+}

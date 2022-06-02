@@ -1,0 +1,38 @@
+﻿.MainForm{
+    height: auto;
+    width: 100%;
+    display:flex;
+    flex-flow:column;
+    
+}
+
+
+.MainForm textarea{
+    border: 0px;
+    background-color: inherit;
+    outline:none;
+    overflow:auto;
+     width:100%;
+}
+
+
+    .MainForm textarea[name="titleComment"] {
+        height: 30px;
+        max-height: 105px;
+    }
+
+    .MainForm textarea[name="title"] {
+        height: 108px;
+        max-height: 378px;
+    }
+
+    .MainForm textarea[name="mainImg"] {
+        max-height: 30px;
+        font-style: italic;
+        min-height: 30px;
+        overflow-x: hidden;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+

@@ -1,0 +1,77 @@
+﻿.ArticleContent {
+    width:100%;
+    min-height:100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    
+}
+.ArticleContent > h1{
+    text-align: center;
+    font-family: Impact;
+    font-weight:400;  
+    font-size:70px;
+    margin: 2.5% 0 1.5% 0;
+}
+.ArticleContent > h2{
+    text-align: center;
+    font-size: 17px;
+    font-family: Consolas;
+    color:darkgray;
+}
+.ArticleContent img{
+    max-width: 100%;
+    height: auto;
+    display:block;
+    max-height: 50%;
+    margin: 0 0 0 0;
+    padding: 2% 0 2% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px #e6e6e6;
+    
+}
+.ArticleContent p {
+    font-family: Verdana;
+    font-size: 20px;
+    margin-bottom: 2em;
+    margin-top: 0;
+    
+}
+.ArticleContent article{
+    width: 100%;
+    height: auto;
+    margin: 3% 0 3% 0;
+}
+
+.ArticleContent h3{
+    font-size:40px;
+    font-weight: bold;
+    margin: 0 0 2% 0;
+    font-family: 'Times New Roman';
+}
+.ArticleContent a{
+    color: #6d5a9a;
+    
+}
+.ArticleContent a:hover{
+    color: #ffffff;
+   text-decoration:none;
+    background-color: #6d5a9a;
+}
+
+
+
+
+
+.ArticleLSBar {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.ArticleRSBar {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}

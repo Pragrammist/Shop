@@ -1,0 +1,40 @@
+﻿.wrapper {
+    min-height: 1280px;
+    overflow: auto;
+    background-color: #ffffff;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.header {
+    height: auto;
+    width: auto;
+    height: 10%;
+    
+}
+.footer {
+    height: auto;
+    width: auto;
+    min-height: 20%;
+    background-color: #191919;
+}
+.main {
+    height: auto;
+    width: auto;
+    min-height: 70%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.LeftSlightBar {
+    flex: 0 0 25%;
+    height: auto;
+    
+}
+.RightSlightBar {
+    flex: 0 0 25%;
+    height: auto;
+    
+}
+.MainContent {
+    height: auto;
+    min-width: 50%;
+}
